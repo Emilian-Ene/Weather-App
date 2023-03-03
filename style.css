@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid red 2px;
+  height: 100vh;
+  background-color: rgb(253, 235, 197);
+  font-family: 'Roboto', sans-serif;
+}
+.card {
+  background-color: black;
+  padding: 50px;
+  border-radius: 25px;
+  width: 600px;
+  color: white;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 16px;
+  outline: none;
+  font-size: 16px;
+  background-color: rgb(69, 69, 69);
+  color: red;
+  cursor: pointer;
+}
+button :hover {
+  color: green;
+  transition: all ease-in-out 0.2s;
+}
+input {
+  height: 40px;
+  width: 60%;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+  color: white;
+  padding: 26px;
+  background-color: rgb(69, 69, 69);
+}
+::placeholder {
+  color: red;
+  font-size: 16px;
+}
+.city {
+  margin-bottom: 10px;
+}
+.temp {
+  margin-bottom: 10px;
+}
+.wind,
+.humidity,
+.description {
+  font-size: 14px;
+}
