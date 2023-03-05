@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   display: flex;
@@ -9,14 +10,12 @@ body {
   align-items: center;
   border: solid red 2px;
   height: 100vh;
-  background-color: rgb(253, 235, 197);
-  font-family: 'Roboto', sans-serif;
+  background-color: darkgreen;
 }
 .card {
-  background-color: black;
-  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 26px;
   border-radius: 25px;
-  width: 600px;
   color: white;
 }
 .search {
@@ -26,7 +25,26 @@ body {
   gap: 10px;
   margin-bottom: 80px;
 }
-button {
+#location {
+  font-size: 18px;
+  color: red;
+}
+#city-name {
+  height: 40px;
+  width: 100%;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  padding: 26px;
+  background-color: rgb(69, 69, 69);
+}
+::placeholder {
+  color: red;
+  font-size: 16px;
+}
+#btn {
   border-radius: 50%;
   border: none;
   outline: none;
@@ -37,33 +55,20 @@ button {
   color: red;
   cursor: pointer;
 }
-button :hover {
+#btn:hover {
   color: green;
   transition: all ease-in-out 0.2s;
 }
-input {
-  height: 40px;
-  width: 60%;
-  border-radius: 18px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  font-family: inherit;
-  color: white;
-  padding: 26px;
-  background-color: rgb(69, 69, 69);
-}
-::placeholder {
-  color: red;
-  font-size: 16px;
-}
+
 .city {
   margin-bottom: 10px;
+  font-size: 24px;
 }
 .temp {
   margin-bottom: 10px;
+  font-size: 22px;
 }
-.wind,
+.windSpeed,
 .humidity,
 .description {
   font-size: 14px;
